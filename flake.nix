@@ -1,6 +1,5 @@
 {
   description = "My custom nixpkgs overlay";
-  license = "MIT";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
