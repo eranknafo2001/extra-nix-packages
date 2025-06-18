@@ -8,8 +8,8 @@ pkgs.stdenv.mkDerivation (finalAttrs: {
   src = pkgs.fetchFromGitHub {
     owner = "openai";
     repo = "codex";
-    rev = "0402aef126b8f94ba84a8223dbe55ca0153a3f05";
-    sha256 = "sha256-6VgDMxPbJcTu/Un5mW88MNZ3Z5/F0ZP6SpahYG3+SXI=";
+    rev = "44022db8d0c4a0cfe5b5b041ef0c1c8811ce6e12";
+    sha256 = "sha256-S9xzyg6fC/uiW9xNv0HXW+GzYaJFKzjQn7ZTugc0tEM=";
   };
   sourceRoot = finalAttrs.src.name;
   nativeBuildInputs = with pkgs; [
@@ -21,7 +21,7 @@ pkgs.stdenv.mkDerivation (finalAttrs: {
 
   pnpmDeps = pkgs.pnpm.fetchDeps {
     inherit (finalAttrs) pname version src;
-    hash = "sha256-rQusKKn+lSAMxP0QY2Pcos7TxQE2AF//xDiFAJ2gTfk=";
+    hash = "sha256-SyKP++eeOyoVBFscYi+Q7IxCphcEeYgpuAj70+aCdNA=";
   };
 
   buildPhase = ''
