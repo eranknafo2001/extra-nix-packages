@@ -19,7 +19,6 @@
 
         myPackages = {
           bevy-cli = pkgs.callPackage ./pkgs/bevy-cli {inherit pkgs lib;};
-          codex-cli = pkgs.callPackage ./pkgs/codex-cli {inherit pkgs;};
         };
       in {
         packages =
