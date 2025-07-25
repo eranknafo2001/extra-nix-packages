@@ -19,14 +19,10 @@
 
         myPackages = {
           bevy-cli = pkgs.callPackage ./pkgs/bevy-cli {inherit pkgs lib;};
+          sst-opencode-ai = pkgs.callPackage ./pkgs/opencode {inherit pkgs lib;};
         };
       in {
-        packages =
-          myPackages
-          // {
-            # Make all packages available
-            # default = myPackages.hello-custom;
-          };
+        packages = myPackages;
 
         # Optional: provide an overlay for use in other flakes
         overlays.default = _final: _prev: myPackages;
