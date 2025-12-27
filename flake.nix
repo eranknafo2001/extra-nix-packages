@@ -20,6 +20,8 @@
         myPackages = {
           bevy-cli = pkgs.callPackage ./pkgs/bevy-cli {inherit pkgs lib;};
           sst-opencode-ai = pkgs.callPackage ./pkgs/opencode {inherit pkgs lib;};
+          stremio-linux-shell = pkgs.callPackage ./pkgs/stremio-linux-shell {inherit pkgs lib;};
+          stremio = pkgs.callPackage ./pkgs/stremio {inherit pkgs lib;};
         };
       in {
         packages = myPackages;

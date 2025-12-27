@@ -1,7 +1,7 @@
 {pkgs, ...}:
 pkgs.stdenv.mkDerivation rec {
   pname = "opencode";
-  version = "0.5.13";
+  version = "0.11.1";
 
   src = pkgs.fetchzip {
     url = "https://github.com/sst/opencode/releases/download/v${version}/opencode-linux-x64.zip";
