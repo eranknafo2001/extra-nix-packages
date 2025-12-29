@@ -21,6 +21,7 @@
           bevy-cli = pkgs.callPackage ./pkgs/bevy-cli {inherit pkgs lib;};
           stremio-linux-shell = pkgs.callPackage ./pkgs/stremio-linux-shell {inherit pkgs lib;};
           stremio = pkgs.callPackage ./pkgs/stremio {inherit pkgs lib;};
+          btca = pkgs.callPackage ./pkgs/btca {inherit pkgs lib;};
         };
       in {
         packages = myPackages;
